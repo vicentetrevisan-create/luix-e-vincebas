@@ -99,12 +99,25 @@
             color: var(--texto-claro);
             margin-top: 20px;
             font-size: 1.2rem;
+            border-left: 3px solid var(--cor-londres);
+            padding-left: 10px;
         }
 
         p {
             color: #cbd5e1;
             font-size: 1rem;
             text-align: justify;
+        }
+
+        /* Estilização das Imagens Responsivas */
+        .blog-image {
+            width: 100%;
+            height: auto;
+            max-height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid var(--borda);
         }
 
         /* Listas Estilizadas */
@@ -167,13 +180,22 @@
             <!-- Artigo 2: Londres e História -->
             <article>
                 <h2 class="london-title">Londres: Uma Capital Erguida pela História</h2>
+                
+                <img src="https://wikimedia.org" alt="Emirates Stadium em Londres" class="blog-image">
+                
                 <p>Londres é uma das metrópoles mais influentes do planeta, mas sua trajetória começou muito antes dos arranha-céus modernos. Fundada pelos romanos por volta do ano 43 d.C. sob o nome de <em>Londinium</em>, a cidade sobreviveu a invasões vikings, à Grande Peste de 1665 e ao devastador Grande Incêndio de 1666, que destruiu a maior parte de sua estrutura medieval.</p>
                 <p>A reconstrução da cidade deu origem à arquitetura icônica que conhecemos hoje, misturando monumentos históricos como a Torre de Londres e a Abadia de Westminster com a modernidade financeira global. No século XIX, a cidade se tornou o coração do Império Britânico e da Revolução Industrial, moldando as bases do mundo tecnológico em que vivemos hoje.</p>
+                
+                <h3>Arsenal e a Identidade dos Imigrantes</h3>
+                <p>O norte de Londres historicamente acolheu grandes fluxos migratórios após a Segunda Guerra Mundial. Nesse cenário de transformações, o <strong>Arsenal FC</strong> tornou-se um refúgio de inclusão. Sob o comando do técnico francês Arsène Wenger nos anos 90 e 2000, o clube quebrou barreiras de isolamento ao abrir as portas para atletas multiculturais de origens africanas e caribenhas, tornando-se um verdadeiro símbolo de identidade, acolhimento e respeito para as comunidades de imigrantes da cidade.</p>
             </article>
 
             <!-- Artigo 3: Rio de Janeiro -->
             <article>
                 <h2 class="rio-title">Rio de Janeiro: O Berço da Paixão Brasileira</h2>
+                
+                <img src="https://wikimedia.org" alt="Estádio do Maracanã no Rio de Janeiro" class="blog-image">
+                
                 <p>Fundado em 1565 pelos colonizadores portugueses para combater invasores franceses, o Rio de Janeiro foi a capital do Brasil por quase dois séculos e chegou a ser a sede do Império Português. Suas praias e o icônico Cristo Redentor dividem espaço com uma história política e cultural riquíssima que moldou a identidade do nosso país.</p>
                 <p>No futebol, o Rio é um templo sagrado. A cidade abriga o icônico Estádio do Maracanã, palco de finais de Copa do Mundo e clássicos memoráveis. A cultura carioca é historicamente ligada aos gramados, transformando os dias de jogos em verdadeiros feriados culturais de celebração e rivalidade sadia.</p>
             </article>
@@ -181,7 +203,10 @@
             <!-- Artigo 4: Milão -->
             <article>
                 <h2 class="milao-title">Milão: História, Moda e Tradição Tática</h2>
-                <p>Milão, localizada no norte da Itália, começou como um assentamento celta antes de ser conquistada pelos romanos sob o nome de <em>Mediolanum</em>. A cidade floresceu no Renascimento sob o comando de famílias poderosas como os Sforza e os Visconti, tornando-se hoje a capital global da moda, do design e das finanças europeias.</p>
+                
+                <img src="https://wikimedia.org" alt="Estádio San Siro em Milão" class="blog-image">
+                
+                <p>Milão, localizada no norte da Itália, começou como um assentamento celta antes de ser conquistada pelos romanos sob o nome de <em>Mediolanum</em>. A cidade floreceu no Renascimento sob o comando de famílias poderosas como os Sforza e os Visconti, tornando-se hoje a capital global da moda, do design e das finanças europeias.</p>
                 <p>Dentro de campo, Milão divide seus holofotes entre dois gigantes absolutos do futebol europeu que compartilham o mesmo gramado: o icônico estádio San Siro (também conhecido como Giuseppe Meazza). A cidade é famosa pela sua tradição de futebol tático, seguro e extremamente competitivo.</p>
             </article>
         </main>
@@ -196,266 +221,3 @@
                     <li><strong>Arsenal:</strong> Conhecido como os <em>Gunners</em>, possui base tradicional no norte de Londres e joga no Emirates Stadium.</li>
                     <li><strong>Chelsea:</strong> Clube do oeste da cidade, multicampeão europeu que manda seus jogos no histórico Stamford Bridge.</li>
                     <li><strong>Tottenham Hotspur:</strong> Grande rival do Arsenal, dono de um dos estádios mais tecnológicos e modernos do mundo.</li>
-                    <li><strong>West Ham United:</strong> O time do leste londrino, famoso por sua torcida apaixonada e por jogar no Estádio Olímpico.</li>
-                    <li><strong>Crystal Palace:</strong> Representante tradicional do sul de Londres, reconhecido pela atmosfera vibrante em seu estádio.</li>
-                </ul>
-            </div>
-
-            <!-- Guia de Times de Futebol: Rio de Janeiro -->
-            <div class="sidebar-box">
-                <h2 class="rio-title" style="font-size: 1.4rem;">Futebol Carioca</h2>
-                <p>Quatro grandes clubes tradicionais dividem as paixões e os clássicos estaduais históricos no Rio.</p>
-                <ul class="rio-list">
-                    <li><strong>Flamengo:</strong> Dono de uma das maiores torcidas do mundo, costuma mandar seus grandes jogos no Maracanã.</li>
-                    <li><strong>Vasco da Gama:</strong> Clube de rica história social e pioneira, proprietário do histórico estádio de São Januário.</li>
-                    <li><strong>Fluminense:</strong> Conhecido como o <em>Tricolor das Laranjeiras</em>, tem forte tradição e joga com frequência no Maracanã.</li>
-                    <li><strong>Botafogo:</strong> O <em>Glorioso</em>, clube que historicamente cedeu craques lendários para a Seleção Brasileira, manda jogos no Nilton Santos (Engenhão).</li>
-                </ul>
-            </div>
-
-            <!-- Guia de Times de Futebol: Milão -->
-            <div class="sidebar-box">
-                <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arsenal: O Clube dos Imigrantes - Blog Tech</title>
-    <style>
-        /* Variáveis de Cores - Design System Ampliado */
-         :root {
-            --bg-principal: #0f172a;
-            --bg-card: #1e293b;
-            --texto-claro: #f8fafc;
-            --texto-mutado: #94a3b8;
-            --cor-tech: #38bdf8;
-            --cor-arsenal: #ef4444; /* Vermelho vibrante do Arsenal */
-            --cor-ouro: #eab308;
-            --borda: #334155;
-        }
-
-        /* Configurações Gerais */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-principal);
-            color: var(--texto-claro);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Cabeçalho */
-        header {
-            background-color: var(--bg-card);
-            border-bottom: 1px solid var(--borda);
-            padding: 20px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h1 {
-            font-size: 1.5rem;
-            color: var(--cor-tech);
-            margin: 0;
-        }
-
-        nav a {
-            color: var(--texto-claro);
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--cor-tech);
-        }
-
-        /* Banner Principal de Destaque */
-        .hero-banner {
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-            border-bottom: 3px solid var(--cor-arsenal);
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .hero-banner h2 {
-            font-size: 2.5rem;
-            color: var(--cor-arsenal);
-            margin: 0 0 10px 0;
-            border: none;
-        }
-
-        .hero-banner p {
-            max-width: 800px;
-            margin: 0 auto;
-            color: var(--texto-mutado);
-            font-size: 1.2rem;
-        }
-
-        /* Container Principal do Layout */
-        .main-container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 30px;
-        }
-
-        @media (max-width: 768px) {
-            .main-container {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Artigos e Cards */
-        article, .sidebar-box {
-            background-color: var(--bg-card);
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid var(--borda);
-            margin-bottom: 30px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            color: var(--cor-tech);
-            margin-top: 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--borda);
-        }
-
-        .arsenal-title { color: var(--cor-arsenal); }
-
-        p {
-            color: #cbd5e1;
-            font-size: 1rem;
-            text-align: justify;
-        }
-
-        /* Listas Estilizadas */
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            padding: 12px 0;
-            border-bottom: 1px solid var(--borda);
-            color: #cbd5e1;
-        }
-
-        li strong {
-            color: var(--cor-arsenal);
-        }
-
-        /* Botão de Ação Especial */
-        .btn-voltar {
-            display: inline-block;
-            background-color: var(--cor-arsenal);
-            color: var(--texto-claro);
-            padding: 10px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: opacity 0.3s;
-            margin-top: 15px;
-        }
-
-        .btn-voltar:hover {
-            opacity: 0.9;
-        }
-
-        /* Rodapé */
-        footer {
-            text-align: center;
-            padding: 30px;
-            background-color: var(--bg-card);
-            border-top: 1px solid var(--borda);
-            color: var(--texto-mutado);
-            margin-top: 60px;
-            font-size: 0.9rem;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Menu Superior -->
-    <header>
-        <h1>Meu Blog Tech</h1>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="#">Tecnologia</a>
-            <a href="#">Cultura & Viagens</a>
-            <a href="#">Sobre</a>
-        </nav>
-    </header>
-
-    <!-- Banner Dedicado -->
-    <section class="hero-banner">
-        <h2>Arsenal FC: Identidade e Imigração</h2>
-        <p>Como um clube do norte de Londres acolheu o mundo e se tornou a voz cultural de gerações de imigrantes.</p>
-    </section>
-
-    <!-- Conteúdo em Colunas -->
-    <div class="main-container">
-        
-        <!-- Coluna Principal (Esquerda) -->
-        <main>
-            <!-- Bloco 1: A Conexão com a Comunidade -->
-            <article>
-                <h3 class="arsenal-title">A Fundação Geográfica e a Geração Windrush</h3>
-                <p>Após se mudar do sul para o norte de Londres (Islington) em 1913, o Arsenal fincou raízes em uma região que se tornou o coração de intensos fluxos migratórios britânicos. Nas décadas de 1940 e 1950, a chamada <em>Geração Windrush</em> — imigrantes caribenhos convidados para ajudar a reconstruir o Reino Unido no pós-guerra — escolheu esses bairros para morar.</p>
-                <p>Enquanto o preconceito racial e social imperava nas ruas e em muitos estádios da época, o Arsenal gradualmente se transformou em um "terceiro espaço" seguro. O clube desenvolveu uma cultura de arquibancada vibrante onde trabalhadores locais e novos cidadãos imigrantes podiam torcer lado a lado, unificados pela paixão pela camisa vermelha.</p>
-            </article>
-
-            <!-- Bloco 2: A Era Arsène Wenger e o Multiculturalismo -->
-            <article>
-                <h3 class="arsenal-title">O Legado de Representatividade em Campo</h3>
-                <p>O ponto de virada definitivo aconteceu com a chegada do técnico francês Arsène Wenger em 1996. Wenger não apenas revolucionou a parte tática e tecnológica, mas também abriu as portas do clube para atletas do mundo inteiro, quebrando a barreira da xenofobia inglesa no esporte. Ele foi responsável direto por popularizar e valorizar o futebol de jogadores africanos e de filhos de migrantes caribenhos na elite da Premier League.</p>
-                <p>Em **28 de setembro de 2002**, o Arsenal fez história ao se tornar o primeiro clube inglês a entrar em campo com nove jogadores negros em sua escalação titular. Esse fato histórico teve um impacto gigantesco em comunidades de imigrantes de Londres e de países africanos (como Nigéria, Gana e Quênia), que finalmente viam suas identidades, traços e expressões culturais refletidos com respeito e sucesso no topo do esporte mundial.</p>
-            </article>
-        </main>
-
-        <!-- Barra Lateral (Direita) -->
-        <aside>
-            <!-- Ícones Culturais -->
-            <div class="sidebar-box">
-                <h3 class="arsenal-title" style="font-size: 1.3rem;">Ícones Globais</h3>
-                <p>Grandes lendas do Arsenal que simbolizam essa fusão multicultural:</p>
-                <ul>
-                    <li><strong>Ian Wright:</strong> Descendente de jamaicanos, ícone da comunidade negra e operária de Londres.</li>
-                    <li><strong>Thierry Henry:</strong> Francês de origem antilhana, considerado um dos maiores atacantes da história do futebol mundial.</li>
-                    <li><strong>Nwankwo Kanu:</strong> Ídolo nigeriano que consolidou a gigantesca e duradoura torcida do Arsenal no continente africano.</li>
-                    <li><strong>Bukayo Saka:</strong> Atual estrela do clube e da Seleção Inglesa, nascido em Londres e orgulhoso filho de imigrantes nigerianos.</li>
-                </ul>
-            </div>
-
-            <!-- Programas Sociais Reais do Clube -->
-            <div class="sidebar-box">
-                <h3 class="tech-title" style="font-size: 1.3rem;">Apoio Comunitário</h3>
-                <p>O clube atua ativamente na inclusão social por meio do departamento **Arsenal in the Community**:</p>
-                <ul>
-                    <li>Aulas gratuitas de inglês e qualificação profissional para refugiados.</li>
-                    <li>Festivais e projetos dedicados a celebrar a herança de imigrantes irlandeses e caribenhos locais.</li>
-                    <li>Parcerias internacionais para apoiar campos de refugiados ao redor do mundo.</li>
-                </ul>
-                <a href="index.html" class="btn-voltar">← Voltar ao Blog</a>
-            </div>
-        </aside>
-
-    </div>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2026 Meu Blog Tech - Página especial sobre Futebol, História e Inclusão.</p>
-    </footer>
-
-</body>
-</html>
-
-                <h2 class="milao-title" style="font-size: 1.4rem;">Futebol Milanês</h2>
-                <p>A capital da Lombardia concentra títulos europeus expressivos divididos entre dois gigantes.</p>
