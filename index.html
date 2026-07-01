@@ -13,6 +13,8 @@
             --texto-mutado: #94a3b8;
             --cor-tech: #38bdf8;
             --cor-londres: #f43f5e;
+            --cor-rio: #22c55e; /* Verde tropical para o Rio de Janeiro */
+            --cor-milao: #a855f7; /* Roxo elegante para Milão */
             --borda: #334155;
         }
 
@@ -90,6 +92,8 @@
 
         .tech-title { color: var(--cor-tech); }
         .london-title { color: var(--cor-londres); }
+        .rio-title { color: var(--cor-rio); }
+        .milao-title { color: var(--cor-milao); }
 
         h3 {
             color: var(--texto-claro);
@@ -119,9 +123,9 @@
             color: var(--cor-tech);
         }
 
-        .london-list strong {
-            color: var(--cor-londres);
-        }
+        .london-list strong { color: var(--cor-londres); }
+        .rio-list strong { color: var(--cor-rio); }
+        .milao-list strong { color: var(--cor-milao); }
 
         /* Rodapé */
         footer {
@@ -157,7 +161,7 @@
             <article>
                 <h2 class="tech-title">Meu Blog Tech</h2>
                 <p>Nós viemos falar sobre as cidades mais relevantes no cenário mundial do futebol.</p>
-                <p>escrito por: <strong>Luiz Phelipe e Vicente Trevisan.</strong> </p>
+                <p>Escrito por: <strong>Luiz Phelipe e Vicente Trevisan.</strong> </p>
             </article>
 
             <!-- Artigo 2: Londres e História -->
@@ -166,11 +170,25 @@
                 <p>Londres é uma das metrópoles mais influentes do planeta, mas sua trajetória começou muito antes dos arranha-céus modernos. Fundada pelos romanos por volta do ano 43 d.C. sob o nome de <em>Londinium</em>, a cidade sobreviveu a invasões vikings, à Grande Peste de 1665 e ao devastador Grande Incêndio de 1666, que destruiu a maior parte de sua estrutura medieval.</p>
                 <p>A reconstrução da cidade deu origem à arquitetura icônica que conhecemos hoje, misturando monumentos históricos como a Torre de Londres e a Abadia de Westminster com a modernidade financeira global. No século XIX, a cidade se tornou o coração do Império Britânico e da Revolução Industrial, moldando as bases do mundo tecnológico em que vivemos hoje.</p>
             </article>
+
+            <!-- Artigo 3: Rio de Janeiro -->
+            <article>
+                <h2 class="rio-title">Rio de Janeiro: O Berço da Paixão Brasileira</h2>
+                <p>Fundado em 1565 pelos colonizadores portugueses para combater invasores franceses, o Rio de Janeiro foi a capital do Brasil por quase dois séculos e chegou a ser a sede do Império Português. Suas praias e o icônico Cristo Redentor dividem espaço com uma história política e cultural riquíssima que moldou a identidade do nosso país.</p>
+                <p>No futebol, o Rio é um templo sagrado. A cidade abriga o icônico Estádio do Maracanã, palco de finais de Copa do Mundo e clássicos memoráveis. A cultura carioca é historicamente ligada aos gramados, transformando os dias de jogos em verdadeiros feriados culturais de celebração e rivalidade sadia.</p>
+            </article>
+
+            <!-- Artigo 4: Milão -->
+            <article>
+                <h2 class="milao-title">Milão: História, Moda e Tradição Tática</h2>
+                <p>Milão, localizada no norte da Itália, começou como um assentamento celta antes de ser conquistada pelos romanos sob o nome de <em>Mediolanum</em>. A cidade floresceu no Renascimento sob o comando de famílias poderosas como os Sforza e os Visconti, tornando-se hoje a capital global da moda, do design e das finanças europeias.</p>
+                <p>Dentro de campo, Milão divide seus holofotes entre dois gigantes absolutos do futebol europeu que compartilham o mesmo gramado: o icônico estádio San Siro (também conhecido como Giuseppe Meazza). A cidade é famosa pela sua tradição de futebol tático, seguro e extremamente competitivo.</p>
+            </article>
         </main>
 
         <!-- Coluna da Direita: Barra Lateral com Informações Focadas -->
         <aside>
-            <!-- Guia de Times de Futebol -->
+            <!-- Guia de Times de Futebol: Londres -->
             <div class="sidebar-box">
                 <h2 class="london-title" style="font-size: 1.4rem;">Futebol Londrino</h2>
                 <p>Londres é considerada por muitos a capital mundial do futebol. A cidade abriga dezenas de clubes e respira rivalidades locais intensas na Premier League.</p>
@@ -183,24 +201,19 @@
                 </ul>
             </div>
 
-            <!-- Tecnologias Estudadas -->
+            <!-- Guia de Times de Futebol: Rio de Janeiro -->
             <div class="sidebar-box">
-                <h2 class="tech-title" style="font-size: 1.4rem;">Stack de Estudos</h2>
-                <p>Tecnologias que estou utilizando e documentando neste repositório do GitHub:</p>
-                <ul>
-                    <li><strong>HTML5:</strong> Estruturação de conteúdo web.</li>
-                    <li><strong>CSS3:</strong> Estilização avançada, variáveis e Grid Layout.</li>
-                    <li><strong>Git:</strong> Controle de versão local através de commits.</li>
+                <h2 class="rio-title" style="font-size: 1.4rem;">Futebol Carioca</h2>
+                <p>Quatro grandes clubes tradicionais dividem as paixões e os clássicos estaduais históricos no Rio.</p>
+                <ul class="rio-list">
+                    <li><strong>Flamengo:</strong> Dono de uma das maiores torcidas do mundo, costuma mandar seus grandes jogos no Maracanã.</li>
+                    <li><strong>Vasco da Gama:</strong> Clube de rica história social e pioneira, proprietário do histórico estádio de São Januário.</li>
+                    <li><strong>Fluminense:</strong> Conhecido como o <em>Tricolor das Laranjeiras</em>, tem forte tradição e joga com frequência no Maracanã.</li>
+                    <li><strong>Botafogo:</strong> O <em>Glorioso</em>, clube que historicamente cedeu craques lendários para a Seleção Brasileira, manda jogos no Nilton Santos (Engenhão).</li>
                 </ul>
             </div>
-        </aside>
 
-    </div>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2026 Meu Blog Tech - Desenvolvido como projeto de estudos no 1º Ano do Ensino Médio.</p>
-    </footer>
-
-</body>
-</html>
+            <!-- Guia de Times de Futebol: Milão -->
+            <div class="sidebar-box">
+                <h2 class="milao-title" style="font-size: 1.4rem;">Futebol Milanês</h2>
+                <p>A capital da Lombardia concentra títulos europeus expressivos divididos entre dois gigantes.</p>
