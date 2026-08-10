@@ -6,7 +6,7 @@
     <title>Meu Blog Tech & Cultura</title>
     <style>
         /* Variáveis de Cores de Design System Profissional */
-        :root {
+         :root {
             --bg-principal: #0f172a;
             --bg-card: #1e293b;
             --texto-claro: #f8fafc;
@@ -76,4 +76,159 @@
         /* Artigos e Cards */
         article, .sidebar-box {
             background-color: var(--bg-card);
-            
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--borda);
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--borda);
+        }
+
+        .tech-title { color: var(--cor-tech); }
+        .london-title { color: var(--cor-londres); }
+        .rio-title { color: var(--cor-rio); }
+        .milao-title { color: var(--cor-milao); }
+
+        h3 {
+            color: var(--texto-claro);
+            margin-top: 20px;
+            font-size: 1.2rem;
+            border-left: 3px solid var(--cor-londres);
+            padding-left: 10px;
+        }
+
+        p {
+            color: #cbd5e1;
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        /* Estilização das Imagens Responsivas */
+        .blog-image {
+            width: 100%;
+            height: auto;
+            max-height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid var(--borda);
+        }
+
+        /* Listas Estilizadas */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--borda);
+            color: #cbd5e1;
+        }
+
+        li strong {
+            color: var(--cor-tech);
+        }
+
+        .london-list strong { color: var(--cor-londres); }
+        .rio-list strong { color: var(--cor-rio); }
+        .milao-list strong { color: var(--cor-milao); }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--bg-card);
+            border-top: 1px solid var(--borda);
+            color: var(--texto-mutado);
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Blog Tech</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Cultura & Viagens</a>
+            <a href="#">Sobre</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        
+        <main>
+            <article>
+                <h2 class="tech-title">Meu Blog Tech</h2>
+                <p>Nós viemos falar sobre as cidades mais relevantes no cenário mundial do futebol.</p>
+                <p>Escrito por: <strong>Luiz Phelipe e Vicente Trevisan.</strong> </p>
+                <button>❤️<span>0</span></button>
+            </article>
+
+            <article>
+                <h2 class="london-title">Londres: Uma Capital Erguida pela História</h2>
+                
+                <img src="London_Emirates_Stadium_arsenal.jpg">
+                
+                <p>Londres é uma das metrópoles mais influentes do planeta, mas sua trajetória começou muito antes dos arranha-céus modernos. Fundada pelos romanos por volta do ano 43 d.C. sob o nome de <em>Londinium</em>, a cidade sobreviveu a invasões vikings, à Grande Peste de 1665 e ao devastador Grande Incêndio de 1666, que destruiu a maior parte de sua estrutura medieval.</p>
+                <p>A reconstrução da cidade deu origem à arquitetura icônica que conhecemos hoje, misturando monumentos históricos como a Torre de Londres e a Abadia de Westminster com a modernidade financeira global. No século XIX, a cidade se tornou o coração do Império Britânico e da Revolução Industrial, moldando as bases do mundo tecnológico em que vivemos hoje.</p>
+                
+                <h3>Arsenal e a Identidade dos Imigrantes</h3>
+                <p>O norte de Londres historicamente acolheu grandes fluxos migratórios após a Segunda Guerra Mundial. Nesse cenário de transformações, o <strong>Arsenal FC</strong> tornou-se um refúgio de inclusão. Sob o comando do técnico francês Arsène Wenger nos anos 90 e 2000, o clube quebrou barreiras de isolamento ao abrir as portas para atletas multiculturais de origens africanas e caribenhas, tornando-se um verdadeiro símbolo de identidade, acolhimento e respeito para as comunidades de imigrantes da cidade.</p>
+                <button>❤️<span>0</span></button>
+            </article>
+
+            <article>
+                <h2 class="rio-title">Rio de Janeiro: O Berço da Paixão Brasileira</h2>
+                
+                <img src="https://wikimedia.org" alt="Estádio do Maracanã no Rio de Janeiro" class="blog-image">
+                
+                <p>Fundado em 1565 pelos colonizadores portugueses para combater invasores franceses, o Rio de Janeiro foi a capital do Brasil por quase dois séculos e chegou a ser a sede do Império Português. Suas praias e o icônico Cristo Redentor dividem espaço com uma história política e cultural riquíssima que moldou a identidade do nosso país.</p>
+                <p>No futebol, o Rio é um templo sagrado. A cidade abriga o icônico Estádio do Maracanã, palco de finais de Copa do Mundo e clássicos memoráveis. A cultura carioca é historicamente ligada aos gramados, transformando os dias de jogos em verdadeiros feriados culturais de celebração e rivalidade sadia.</p>
+                <button>❤️<span>0</span></button>
+            </article>
+
+            <article>
+                <h2 class="milao-title">Milão: História, Moda e Tradição Tática</h2>
+                
+                <img src="https://wikimedia.org" alt="Estádio San Siro em Milão" class="blog-image">
+                
+                <p>Milão, localizada no norte da Itália, começou como um assentamento celta antes de ser conquistada pelos romanos sob o nome de <em>Mediolanum</em>. A cidade floreceu no Renascimento sob o comando de famílias poderosas como os Sforza e os Visconti, tornando-se hoje a capital global da moda, do design e das finanças europeias.</p>
+                <p>Dentro de campo, Milão divide seus holofotes entre dois gigantes absolutos do futebol europeu que compartilham o mesmo gramado: o icônico estádio San Siro (também conhecido como Giuseppe Meazza). A cidade é famosa pela sua tradição de futebol tático, seguro e extremamente competitivo.</p>
+                <button>❤️<span>0</span></button>
+            </article>
+        </main>
+
+        <aside>
+            <div class="sidebar-box">
+                <h2 class="london-title" style="font-size: 1.4rem;">Futebol Londrino</h2>
+                <p>Londres é considerada por muitos a capital mundial do futebol. A cidade abriga dezenas de clubes e respira rivalidades locais intensas na Premier League.</p>
+                <ul class="london-list">
+                    <li><strong>Arsenal:</strong> Conhecido como os <em>Gunners</em>, possui base tradicional no norte de Londres e joga no Emirates Stadium.</li>
+                    <li><strong>Chelsea:</strong> Clube do oeste da cidade, multicampeão europeu que manda seus jogos no histórico Stamford Bridge.</li>
+                    <li><strong>Tottenham Hotspur:</strong> Grande rival do Arsenal, dono de um dos estádios mais tecnológicos e modernos do mundo.</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(botao => {
+            botao.addEventListener("click", () => {
+                let texto = botao.querySelector("span");
+                texto.textContent++;
+            });
+        });
+    </script>
+</body>
+</html>
